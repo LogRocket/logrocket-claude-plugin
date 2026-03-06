@@ -7,6 +7,5 @@
     "email": "support@logrocket.com"
   },
   "license": "MIT",
-  "keywords": ["logrocket", "session-replay", "analytics", "mcp", "galileo"],
-  "mcpServers": "mcp.json"
+  "keywords": ["logrocket", "session-replay", "analytics", "mcp", "galileo"]
 }
