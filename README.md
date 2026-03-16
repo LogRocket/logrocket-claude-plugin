@@ -13,9 +13,7 @@ Connect Claude Code to [LogRocket](https://logrocket.com) to query session repla
 
 1. Add the marketplace: `/plugin marketplace add logrocket/logrocket-claude-plugin`
 2. Install the plugin: `/plugin install logrocket@logrocket`
-3. Find your **App ID** under **Settings > Project Settings** in the [LogRocket dashboard](https://app.logrocket.com), or from the URL: `https://app.logrocket.com/<org_id>/<project_id>`.
-4. Set the environment variables `LOGROCKET_ORG_ID` and `LOGROCKET_PROJECT_ID`.
-5. Connect to the MCP server when prompted to authenticate.
+3. Connect to the MCP server when prompted to authenticate.
 
 ## Example Prompts
 
