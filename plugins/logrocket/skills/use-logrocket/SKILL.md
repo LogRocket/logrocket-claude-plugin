@@ -18,10 +18,11 @@ description: Query LogRocket for session replays, metrics, issues, and user beha
 ## Instructions
 
 1. Call the `use_logrocket` MCP tool with a natural language `query` describing what you want to know.
-2. To continue the same conversation (e.g. follow-up questions, drilling deeper), pass the `chatID` from the previous response.
-3. Be specific about what you want analyzed — mention URLs, click targets, user emails, time ranges, or custom events when possible.
-4. Ask LogRocket to watch sessions when you need detailed, qualitative insights about user behavior.
-5. Present results clearly to the user, including any session URLs, metrics, charts, or actionable insights.
+2. If the user hasn't specified an organization or project, use the `list_organizations` and `list_projects` tools to discover them. If multiple are found, ask the user which to use.
+3. To continue the same conversation (e.g. follow-up questions, drilling deeper), pass the `chatID` from the previous response.
+4. Be specific about what you want analyzed — mention URLs, click targets, user emails, time ranges, or custom events when possible.
+5. Ask LogRocket to watch sessions when you need detailed, qualitative insights about user behavior.
+6. Present results clearly to the user, including any session URLs, metrics, charts, or actionable insights.
 
 ## Example Prompts
 

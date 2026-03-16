@@ -1,6 +1,6 @@
 {
   "logrocket": {
     "type": "http",
-    "url": "https://mcp.logrocket.com/mcp/${LOGROCKET_ORG_ID}/${LOGROCKET_PROJECT_ID}"
+    "url": "https://mcp.logrocket.com/mcp"
   }
 }
