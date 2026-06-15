@@ -6,8 +6,23 @@ Connect Claude Code to [LogRocket](https://logrocket.com) to query session repla
 
 | Component | Description |
 |-----------|-------------|
-| **MCP Server** | Connects Claude Code to the LogRocket API via the `use_logrocket` tool |
+| **MCP Server** | Connects Claude Code to the LogRocket API |
 | **Use LogRocket Skill** | Teaches your AI agent how to query LogRocket on your behalf |
+
+### Available Tools
+
+This plugin connects with `?toolsets=all`, so the full set of LogRocket MCP tools is enabled out of the box (including new toolsets as they're added):
+
+| Tool | Toolset | Description |
+|------|---------|-------------|
+| `list_organizations` | _default_ | List the LogRocket organizations you can access |
+| `list_projects` | _default_ | List the LogRocket projects within an organization |
+| `use_logrocket` | `ask-galileo` | Run natural language queries against your LogRocket data, powered by Ask Galileo |
+| `find_sessions` | `sessions` | Filter LogRocket sessions by user, URL, time range, events, and more |
+| `watch_sessions` | `sessions` | Analyze or extract details from specific sessions |
+| `build_metric` | `metrics` | Query LogRocket analytics data |
+
+To restrict which tools are exposed, change the `toolsets` query parameter on the MCP server URL in `plugins/logrocket/.mcp.json` (e.g. `?toolsets=sessions,metrics`). See the [MCP tools docs](https://docs.logrocket.com/docs/mcp#tools) for details.
 
 ## Setup
 
@@ -27,6 +42,10 @@ Connect Claude Code to [LogRocket](https://logrocket.com) to query session repla
 
 - [LogRocket MCP Server Docs](https://docs.logrocket.com/docs/mcp)
 - [Ask Galileo Docs](https://docs.logrocket.com/docs/ask-galileo)
+
+## Privacy
+
+This plugin connects to the LogRocket MCP server and handles user session data. See LogRocket's [Privacy Policy](https://logrocket.com/privacy/) for details on how data is collected and used.
 
 ## Validation
 
